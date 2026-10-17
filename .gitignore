@@ -1,55 +1,49 @@
-# Prerequisites
-*.d
-
-# Object files
+# Host and cross builds
+/build/
+/out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
 *.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.elf
+*.bin
 *.hex
+*.map
+*.exe
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# IDE and source index
+.idea/
+.vscode/
+*.user
+*.suo
+*.si4project/
+*.sisc
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Runtime data and local configuration
+*.db
+*.db-journal
+*.log
+.env
+.env.*
+!.env.example
+config/local_*
+secrets/
+*.pem
+*.key
+*.p12
 
-# debug information files
-*.dwo
+# Archives and generated packages
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# OS files
+.DS_Store
+Thumbs.db
